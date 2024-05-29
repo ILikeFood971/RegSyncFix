@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.ilikefood971.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"RegistrySyncManagerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "regsyncfix",
+	"version": "${version}",
+	"name": "RegSyncFix",
+	"description": "Simple mod to ignore registry sync mismatches in Fabric API",
+	"authors": [
+		"ILikeFood971"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/regsyncfix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"server": [
+			"net.ilikefood971.RegSyncFix"
+		]
+	},
+	"mixins": [
+		"regsyncfix.mixins.json",
+		{
+			"config": "regsyncfix.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "*",
+		"fabric": "*"
+	}
+}
