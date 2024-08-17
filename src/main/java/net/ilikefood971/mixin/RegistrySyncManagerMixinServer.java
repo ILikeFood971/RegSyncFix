@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @SuppressWarnings("UnstableApiUsage")
 @Mixin(RegistrySyncManager.class)
 public class RegistrySyncManagerMixinServer {
-	@Inject(at = @At("HEAD"), method = "configureClient", cancellable = true)
+	@Inject(at = @At("HEAD"), method = "/(configure|send)(Client|Packet)/", cancellable = true)
 	private static void init(CallbackInfo info) {
 		info.cancel();
 	}
