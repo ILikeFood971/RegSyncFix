@@ -5,7 +5,9 @@ to disable syncs entirely, or you can install it on your client and the client w
 
 ![Example of the error RegSyncFix fixes](example_error.png)
 
-Tested on 1.20.4 but will probably work on just about any version of Minecraft with Fabric API.
+## Supported versions
+
+Every Minecraft version from 1.14 onwards that has Fabric API. Download the jar for your version.
 
 ## WARNING
 

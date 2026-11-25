@@ -1,9 +1,12 @@
 {
 	"required": true,
-	"package": "net.ilikefood971.mixin",
-	"compatibilityLevel": "JAVA_8",
+	"package": "me.ilikefood971.mixin",
+	"compatibilityLevel": "${java}",
 	"mixins": [
-      "RegistrySyncManagerMixinServer"
+		"RegistrySyncManagerMixin"
+	],
+	"client": [
+		"ClientRegistrySyncHandlerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
